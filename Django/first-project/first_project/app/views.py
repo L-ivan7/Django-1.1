@@ -35,5 +35,5 @@ def workdir_view(request):
     # который возвращает список файлов в рабочей 
     # директории
     path = '.'
-    list_files = os.reverse(path)
+    list_files = os.listdir(path)
     return HttpResponse (f'{list_files}')
